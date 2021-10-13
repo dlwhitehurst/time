@@ -1,0 +1,17 @@
+#%RAML 1.0
+
+title:       OAuth Test Resource
+description: Some API
+baseUri:     http://${http.host}:${http.port}/api/v1
+version: v1
+
+#securitySchemes:
+#  oauth2_0: !include  oauth2.raml
+
+/time:
+  get:
+    description: Retrieve message
+    responses:
+      200:
+        body:
+          application/json:
